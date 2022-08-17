@@ -100,7 +100,7 @@ background-color:#40aa54;}
 }
  
 /*==Search-Banner========================*/
-#search-banner{
+/*#search-banner{
     max-width: 1250px;
     height: 500px;
     border-radius: 30px;
@@ -329,7 +329,7 @@ background-color:#40aa54;}
 }
  
 /*==popular-bundle-pack==========================*/
-#popular-bundle-pack{
+/*#popular-bundle-pack{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -415,7 +415,7 @@ background-color:#40aa54;}
     color: #7c7c7c;
 }
 /*==partner-logo=================================*/
-#partner{
+/*#partner{
     margin: 100px auto;
 }
 .logo-container{
@@ -437,7 +437,7 @@ background-color:#40aa54;}
     transition: all ease 0.3s;
 }
 /*==Download-app===================================*/
-#download-app{
+/*#download-app{
     max-width:1150px;
     width: 100%;
     background-color: #ecf7ee;
