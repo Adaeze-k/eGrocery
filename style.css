@@ -21,6 +21,27 @@ body{
 color:#ffffff;
 background-color:#40aa54;}
  
+.breadcrumbnav {
+    list-style: none;
+}
+
+.breadcrumbnav li {
+    display: inline-block;
+    
+}
+
+.breadcrumbnav li::after {
+    content: " >  ";
+}
+
+.breadcrumbnav li:last-child::after {
+    content: "";
+}
+
+.breadcrumbnav a {
+    font-weight: normal; text-decoration: none;
+    color: #333333;
+}
 /*==Navigation=====================================*/
 .navigation{
     display: flex;
@@ -99,6 +120,65 @@ background-color:#40aa54;}
     transition: all ease 0.3s;
 }
  
+/* cart-sidebar---------------------*/
+.cart-sidebar {
+    position: fixed;
+    right: -600px;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 35px #04040445;
+    overflow-y: auto;
+    z-index: 100;
+    transition: all ease 0.5s;
+}
+
+.cart-sidebar .cart-title ol{
+    padding: 30px 30px;
+}
+.cart-sidebar .cart-body{
+padding: 30px 0;
+
+}
+
+.cart-sidebar .cart-item{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+
+.cart-sidebar .btn {
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+    background-color: #2f3031;
+    color: #fff;
+    font-size: 16px;
+    padding: 20px 39px;
+    letter-spacing: 4px;
+    border-radius: 5px;
+    margin: 20% 10% 0;
+    text-transform: uppercase;
+}
+
+.cart-sidebar .btn:hover{
+    background-color: #40aa54;
+    box-shadow: 0 12px 15px #40aa54;
+}
+.close_icon {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+    font-size: 23px;
+    color: #7c7c7c;
+}
+
+.close_icon:hover {
+    color: #1b1d1f;
+}
 /*==Search-Banner========================*/
 /*#search-banner{
     max-width: 1250px;
