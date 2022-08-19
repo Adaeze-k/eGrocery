@@ -9,3 +9,14 @@ cart_btn.onclick = function(){
 close_icon.onclick = function(){
     cart_sidebar.style.right = "-600px";
 }
+
+var data=0;
+document.getElementsByClassName("root").innerText=data;
+function decrement(){
+    data=data-1;
+    document.getElementsByClassName("root").innerText=data;
+}
+function increment(){
+    data=data+1;
+    document.getElementsByClassName("root").innerText=data;
+}

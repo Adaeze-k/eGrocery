@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>eGrocery | Product Detail</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--==Stylesheet=============================-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--==Fav-icon===============================-->
+    <link rel="shortcut icon" href="images/fav-icon.png" />
+    <!--==Using-Font-Awesome=====================-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!--==Import-Font-Family======================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    <!--==Navigation================================-->
+    <nav class="navigation fixed">
+        <!--logo-------->
+        <a href="index.html" class="logo">
+            <span>e</span>Grocery
+        </a>
+        <!--menu-btn---->
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+    
+        <!--right-nav-(cart)-->
+        <div class="right-nav">
+            <!--cart----->
+            <a href="#" class="cart cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span>0</span>
+            </a>
+        </div>
+    </nav>
+    <!--nav-end--------------------->
+
+    <!--Cart-sidebar------------------>
+    <section class="sidebar">
+        <div class="cart-sidebar">
+            <span class="close_icon"> <i class="fas fa-times"></i> </span>
+            <div class="cart-title">
+                <ol class="breadcrumbnav">
+                    <li><a href="#">Cart</a></li>
+                    <li>Information</li>
+                </ol>
+            </div>
+            <div class="cart-body">
+                <div class="cart-item">
+                    <div class="cart-text">
+                        <h4 class="product-name">Apple</h4>
+                        <h4>1KG</h4>
+                        <h4>NGN 10,000.00</h4>
+                    </div>
+                    <div class="product-qty">
+                        <button onclick="decrement()">-
+                        </button>
+                        <h2 id="root"></h2>
+                        <button onclick="increment()">+
+                        </button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-text">
+                        <h4 class="product-name">Apple</h4>
+                        <h4>1KG</h4>
+                        <h4>NGN 10,000.00</h4>
+                    </div>
+                    <div class="product-qty">
+                        <button onclick="decrement()">-
+                        </button>
+                        <h2 id="root"></h2>
+                        <button onclick="increment()">+
+                        </button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-text">
+                        <h4 class="product-name">Apple</h4>
+                        <h4>1KG</h4>
+                        <h4>NGN 10,000.00</h4>
+                    </div>
+                    <div class="product-qty">
+                        <button onclick="decrement()">-
+                        </button>
+                        <h2 id="root"></h2>
+                        <button onclick="increment()">+
+                        </button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-text">
+                        <h4 class="product-name">Apple</h4>
+                        <h4>1KG</h4>
+                        <h4>NGN 10,000.00</h4>
+                    </div>
+                    <div class="product-qty">
+                        <button onclick="decrement()">-
+                        </button>
+                        <h2 id="root"></h2>
+                        <button onclick="increment()">+
+                        </button>
+                    </div>
+                </div>
+    
+                <a class="btn" href="#"> continue</a>
+            </div>
+        </div>
+    </section>
+
+    <!--product-detail--------------------->
+    <section class="product-detail">
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <p>Home / Apple</p>
+                <img src="images/apple.png" alt="red apple" width="100%" 
+                id="product-img">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/apple.png" alt="red apple" width="100%" 
+                        class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h1>Apple</h1>
+                <h3>NGN 10,000.00</h3>
+                <p>Quantity:</p>
+                <div class="product-qty">
+                    <button onclick="decrement()">-
+                    </button>
+                    <h2 class="root"></h2>
+                    <button onclick="increment()">+
+                    </button>
+                </div>
+                <p>SIze:</p>
+            <select>
+                <option></option>
+                <option>M</option>
+                <option>S</option>
+                <option>XL</option>
+                <option>L</option>
+            </select>
+                <a class="btn" href="#"> Add to cart</a>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odio amet quos perspiciatis facilis voluptates corporis exercitationem architecto 
+                    assumenda reiciendis? Minus animi officiis exercitationem minima.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="./cart.js"></script>
+</body>
+</html>
